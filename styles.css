@@ -148,6 +148,93 @@ h1 {
   color: var(--muted);
 }
 
+.highlights-list {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 0.9rem;
+}
+
+.highlight-item {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 0.75rem;
+  align-items: start;
+  padding: 0.75rem;
+  border: 1px solid #d7e8e5;
+  border-radius: 0.8rem;
+  background: #f8fcfb;
+}
+
+.highlight-item img,
+.highlight-icon {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
+  border-radius: 0.65rem;
+  border: 1px solid #cce0dc;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.highlight-item img {
+  object-fit: contain;
+  object-position: center;
+  padding: 0.3rem;
+  display: block;
+  filter: grayscale(28%) saturate(88%);
+  transition: filter 240ms ease, transform 240ms ease;
+}
+
+.highlight-item:hover img {
+  filter: grayscale(0%) saturate(105%);
+  transform: translateY(-1px) scale(1.02);
+}
+
+.highlight-item img.logo-rainbow {
+  padding: 0.12rem;
+}
+
+.highlight-item.highlight-rainbow {
+  grid-template-columns: 64px 1fr;
+}
+
+.highlight-item img.logo-rainbow {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  min-height: 64px;
+}
+
+.highlight-icon {
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.highlight-item h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.highlight-item p {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.highlight-item span {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #0b5f59;
+}
+
 .section {
   padding: 4rem 6vw;
 }
@@ -221,5 +308,28 @@ footer {
   .site-header {
     flex-direction: column;
     gap: 0.7rem;
+  }
+
+  .highlight-item {
+    grid-template-columns: 46px 1fr;
+  }
+
+  .highlight-item img,
+  .highlight-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    min-height: 48px;
+  }
+
+  .highlight-item.highlight-rainbow {
+    grid-template-columns: 56px 1fr;
+  }
+
+  .highlight-item img.logo-rainbow {
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
   }
 }
