@@ -127,6 +127,16 @@ h1 {
   box-shadow: 0 16px 40px rgba(31, 42, 42, 0.08);
 }
 
+.profile-photo {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  border: 1px solid #c7ddd8;
+  margin-bottom: 1rem;
+}
+
 .hero-card ul {
   margin: 0.75rem 0 0;
   padding-left: 1.2rem;
