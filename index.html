@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mylavarapu Indira Ramya Keerthi | Psychology Consultant</title>
+  <meta name="description" content="Psychology consultation with specialization in remedial and behavior therapy for adults in Hyderabad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">M. I. R. Keerthi</a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Psychology Consultant</p>
+        <h1>Guided psychological support for meaningful progress.</h1>
+        <p>
+          Mylavarapu Indira Ramya Keerthi is a Psychology Consultant at Rainbow Hospitals,
+          specialized in Remedial and Behavior Therapy with consultation support for adults.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="#contact">Book a Consultation</a>
+          <a class="btn secondary" href="#services">View Services</a>
+        </div>
+      </div>
+      <div class="hero-card reveal-delay">
+        <h2>Consultation Highlights</h2>
+        <ul>
+          <li>Rainbow Hospitals Experience</li>
+          <li>Remedial Therapy Support</li>
+          <li>Behavior Therapy Interventions</li>
+          <li>Adults Consultation on Demand</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <h2>Services</h2>
+      <div class="grid">
+        <article class="card reveal">
+          <h3>Remedial Therapy</h3>
+          <p>Structured remedial support designed around individual needs, learning style, and progress goals.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Behavior Therapy</h3>
+          <p>Practical behavior-focused strategies to improve daily functioning, coping, and emotional regulation.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Adult Consultation</h3>
+          <p>On-demand consultation sessions for adults seeking guidance on psychological and behavioral concerns.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Parenting Workshops</h3>
+          <p>Experience conducting parenting workshops focused on practical tools and healthier family dynamics.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="approach" class="section approach">
+      <h2>Practice Approach</h2>
+      <p class="lead reveal">
+        Every consultation is tailored, practical, and goal-oriented, with an emphasis on compassionate communication and measurable progress.
+      </p>
+      <div class="pillars">
+        <div class="pillar reveal">
+          <h3>Specialized Care</h3>
+          <p>Focused work in remedial and behavior therapy based on real-world needs.</p>
+        </div>
+        <div class="pillar reveal">
+          <h3>Rehabilitation Training</h3>
+          <p>Recently RCI certified from UOT Jaipur on Rehabilitation.</p>
+        </div>
+        <div class="pillar reveal">
+          <h3>Family-Centered Insight</h3>
+          <p>Workshop experience with parents supports stronger, healthier home environments.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-panel reveal">
+        <h2>About Mylavarapu Indira Ramya Keerthi</h2>
+        <p>
+          Keerthi works as a Psychology Consultant at Rainbow Hospitals and supports adults with specialized remedial and behavior therapy services.
+          She also brings hands-on experience from parenting workshops and rehabilitation-focused training.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p class="reveal">Use the details below to request a consultation.</p>
+      <div class="contact-grid">
+        <div class="contact-item reveal">
+          <h3>Email</h3>
+          <p><a href="mailto:keerthimylavarapu066@gmail.com">keerthimylavarapu066@gmail.com</a></p>
+        </div>
+        <div class="contact-item reveal">
+          <h3>Phone</h3>
+          <p><a href="tel:+919985300308">+91 9985300308</a></p>
+        </div>
+        <div class="contact-item reveal">
+          <h3>Office</h3>
+          <p>NCC Urban One<br />Hyderabad, Telangana, India</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Mylavarapu Indira Ramya Keerthi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.reveal, .reveal-delay').forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
